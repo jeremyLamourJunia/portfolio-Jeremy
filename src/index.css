@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --blue-dark: #0013ff;
+  --blue-medium: #0083ff;
+  --blue-light: #00bcff;
+  --blue-lighter: #00d7f8;
+  --blue-pale: #00e9ff;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  @apply bg-white text-gray-900;
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent;
+  background-image: linear-gradient(45deg, var(--blue-dark), var(--blue-medium), var(--blue-light));
+}
+
+.nav-link {
+  @apply relative px-4 py-2 text-gray-700 hover:text-blue-600 transition-colors;
+}
+
+.nav-link.active {
+  @apply text-blue-600 font-semibold;
+}
+
+.nav-link.active::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-full h-0.5 bg-blue-600;
+}
+
+.project-box {
+  @apply bg-white rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
