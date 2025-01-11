@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
+import {Link as LinkIcon } from 'lucide-react';
 
 interface ProjectModalProps {
   isOpen: boolean;
@@ -12,6 +13,7 @@ interface ProjectModalProps {
     technologies: string[];
     duration: string;
     images: string[];
+    link?: string;
   };
 }
 
@@ -64,6 +66,16 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, onClose, project })
                 <h4 className="font-semibold mb-2">Durée du projet :</h4>
                 <p className="text-gray-600">{project.duration}</p>
               </div>
+              {project.link && (
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-blue-600 hover:text-blue-700"
+              >
+                Visiter <LinkIcon className="ml-2 h-4 w-4" />
+              </a>
+            )}
 
               <div className="grid grid-cols-2 gap-4">
                 {project.images.map((image, index) => (

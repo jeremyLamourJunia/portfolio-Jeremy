@@ -1,26 +1,43 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import ProjectBox from '../components/ProjectBox';
 import Footer from '../components/Footer';
 
+
 const projects = [
   {
-    title: "Application de Gestion de Stock",
-    categories: ["Web", "Full Stack", "React", "Node.js"],
-    description: "Développement d'une application web complète pour la gestion de stock d'une entreprise de textile.",
-    longDescription: "Cette application permet la gestion complète des stocks, des commandes et des clients. Elle inclut des fonctionnalités avancées comme le suivi en temps réel, les notifications automatiques et un tableau de bord analytique.",
-    date: "Janvier 2024",
+    title: "Site Internet Junior Entreprise",
+    categories: ["Web", "Full Stack"],
+    description: "Refonte et gestion du site web de la Junior Entreprise.",
+    longDescription: "En tant que DSI, j'ai conçu une nouvelle version du site web de la Junior Entreprise. Le site propose deux interfaces : une pour les étudiants (pour rejoindre l'association et réaliser des missions) et une pour les entreprises (présentation des services et missions réalisées). Cette refonte a permis d'améliorer la gestion et l'accès aux informations.",
+    date: "Décembre 2023 - Décembre 2024",
     images: [
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+      "public/images/capture_junior.jpeg",
     ],
-    technologies: ["React", "Node.js", "MongoDB", "Express", "Docker"],
-    duration: "3 mois"
+    technologies: ["WordPress"],
+    duration: "12 mois à temps partiel",
+    link: "https://junia-lille-etudes.fr/"
   },
-  // ... autres projets
+
+  {
+    title: "Le Comptoir",
+    categories: ["SaaS", "Web", "Full Stack"],
+    description: "Développement d'une plateforme SaaS pour aider les restaurateurs à optimiser leur gestion.",
+    longDescription: "Pendant plus d'un mois, nous avions carte blanche pour réaliser un projet informatique. Après plusieurs réunions, nous avons décidé de créer une plateforme SaaS pour améliorer l'expérience client dans les restaurants tout en simplifiant la gestion pour les restaurateurs. Côté restaurateur, le système permet de gérer le menu, les stocks, et la trésorerie avec un tableau de bord complet. Côté consommateur, les clients peuvent scanner un QR code pour accéder au menu, passer commande, et suivre l'état de leur commande en temps réel. Des options comme le paiement via API (SumUp), une borne de commande et une interface web pour consulter le menu en ligne ont également été intégrées.",
+    date: "Mai 2024",
+    images: [
+     "public/images/capture_comptoire_1 (1).jpeg",
+     "public/images/capture_comptoire_1 (2).jpeg",
+     "public/images/capture_comptoire_1 (4).jpeg",
+     "public/images/capture_comptoire_1 (3).jpeg",
+     "public/images/capture_comptoire_1 (5).jpeg",
+     "public/images/capture_comptoire_1 (6).jpeg"
+    ],
+    technologies: ["React", "Next.js", "MongoDB", "Node.js", "Tailwind CSS"],
+    duration: "1 mois et demi à temps plein"
+  },
 ];
 
 const Home = () => {
@@ -42,7 +59,7 @@ const Home = () => {
               className="text-5xl md:text-6xl font-bold"
             >
               Portfolio
-              <span className="block gradient-text">Jérémy Lam</span>
+              <span className="block gradient-text">Jérémy Lamour</span>
             </motion.h1>
             <motion.p
               initial={{ y: 20, opacity: 0 }}
@@ -72,12 +89,13 @@ const Home = () => {
             transition={{ delay: 0.5 }}
             className="md:w-1/2 mt-12 md:mt-0 relative"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-dark to-blue-light opacity-20 rounded-full blur-3xl"></div>
+           <div className="absolute inset-0 bg-gradient-to-r from-blue-dark to-blue-light opacity-20 rounded-full blur-3xl"></div>
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=800&h=800"
+              src="public/images/image_jérémy.jpg"
               alt="Jérémy Lam"
-              className="relative z-10 w-72 h-72 object-cover rounded-full mx-auto border-4 border-white shadow-xl"
+              className="relative z-10 w-96 h-96 object-cover rounded-full mx-auto border-4 border-white shadow-xl"
             />
+
           </motion.div>
         </div>
       </section>
@@ -95,19 +113,17 @@ const Home = () => {
               <h2 className="text-3xl font-bold">À propos de moi</h2>
               <div className="space-y-4 text-gray-600">
                 <p>
-                  Actuellement étudiant en école d'ingénieur, je suis passionné par le développement web et l'entrepreneuriat. Mon parcours m'a permis d'acquérir une solide expertise technique tout en développant une vision business orientée résultats.
-                </p>
+                Actuellement étudiant en école d'ingénieur, je suis passionné par le développement web et l'entrepreneuriat. Mon parcours m'a permis d'acquérir une solide expertise technique tout en développant une vision business.                </p>
                 <p>
-                  Spécialisé dans les technologies modernes comme React, Node.js et TypeScript, je crée des applications web performantes et innovantes. Ma double compétence en développement et en gestion de projet me permet d'avoir une approche globale des projets.
-                </p>
+                Spécialisé dans les technologies modernes comme React et Node.js, je crée des applications web performantes et innovantes. Ma double compétence en développement et en gestion de projet me permet d'avoir une approche globale des projets.                </p>
                 <p>
-                  En parallèle de mes études, j'ai lancé plusieurs projets entrepreneuriaux, notamment dans le domaine du textile personnalisé et des services numériques. Cette expérience m'a appris à gérer des projets de A à Z et à m'adapter aux besoins des clients.
+                En parallèle de mes études, j'ai lancé plusieurs projets entrepreneuriaux, notamment dans le domaine du textile personnalisé et des services numériques. Cette expérience m'a appris à gérer des projets de A à Z et à m'adapter aux besoins des clients.
                 </p>
               </div>
               <div className="flex gap-4">
-                <span className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full">Full Stack</span>
-                <span className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full">Entrepreneur</span>
-                <span className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full">Ingénieur</span>
+                <span className="px-4 py-2 bg-blue-100 text-blue-800 text-sm rounded-full lg:text-lg ">Full Stack</span>
+                <span className="px-4 py-2 bg-blue-100 text-blue-800 text-sm  rounded-full lg:text-lg  ">Entrepreneur</span>
+                <span className="px-4 py-2 bg-blue-100 text-blue-800 text-sm  rounded-full lg:text-lg ">Ingénieur</span>
               </div>
             </motion.div>
             <motion.div
@@ -122,7 +138,7 @@ const Home = () => {
                   <div>
                     <h3 className="text-lg font-semibold mb-2">Technologies</h3>
                     <div className="flex flex-wrap gap-2">
-                      {["React", "Node.js", "TypeScript", "Next.js", "MongoDB", "Docker"].map((tech) => (
+                      {["React", "Node.js", "Wordpress","C++", "JS","JAVA"].map((tech) => (
                         <span key={tech} className="px-3 py-1 bg-gray-100 rounded-full text-sm">
                           {tech}
                         </span>
@@ -131,7 +147,7 @@ const Home = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-2">Formation</h3>
-                    <p className="text-gray-600">École d'Ingénieur - Spécialité Informatique</p>
+                    <p className="text-gray-600">École d'Ingénieur - JUNIA ISEN Lille - 3ème année</p>
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-2">Langues</h3>

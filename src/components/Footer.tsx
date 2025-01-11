@@ -18,11 +18,11 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Réseaux</h3>
             <div className="space-y-2">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-600 hover:text-blue-600">
+              <a href="https://github.com/jeremyLamourJunia" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-600 hover:text-blue-600">
                 <Github className="h-5 w-5 mr-2" />
                 GitHub
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-600 hover:text-blue-600">
+              <a href="https://www.linkedin.com/in/jeremy-lamour/" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-600 hover:text-blue-600">
                 <Linkedin className="h-5 w-5 mr-2" />
                 LinkedIn
               </a>
@@ -39,7 +39,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-200 text-center text-gray-500">
-          <p>&copy; {new Date().getFullYear()} Jérémy Lam. Tous droits réservés.</p>
+          <p>&copy; {new Date().getFullYear()} Jérémy Lamour. Tous droits réservés.</p>
         </div>
       </div>
     </footer>

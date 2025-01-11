@@ -4,7 +4,7 @@ import { useForm, ValidationError } from '@formspree/react';
 import { Linkedin } from 'lucide-react';
 
 const Contact = () => {
-  const [state, handleSubmit] = useForm("your-formspree-id"); // Replace with your Formspree form ID
+  const [state, handleSubmit] = useForm("xrbbryqb"); // Replace with your Formspree form ID
 
   if (state.succeeded) {
     return (
@@ -29,7 +29,7 @@ const Contact = () => {
       exit={{ opacity: 0 }}
       className="pt-24 pb-16"
     >
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-3xl mx-auto px-4 sm:px-5 lg:px-7">
         <h1 className="text-4xl font-bold mb-8">Contact</h1>
         
         <p className="text-xl text-gray-600 mb-8">
@@ -46,7 +46,7 @@ const Contact = () => {
               name="name"
               id="name"
               required
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              className="mt-1 block w-full p-3 rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
             />
             <ValidationError prefix="Name" field="name" errors={state.errors} />
           </div>
@@ -60,7 +60,7 @@ const Contact = () => {
               name="email"
               id="email"
               required
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              className="mt-1 block w-full p-3 rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
             />
             <ValidationError prefix="Email" field="email" errors={state.errors} />
           </div>
@@ -74,7 +74,7 @@ const Contact = () => {
               name="message"
               rows={6}
               required
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              className="mt-1 block w-full rounded-md p-3 border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
             />
             <ValidationError prefix="Message" field="message" errors={state.errors} />
           </div>
@@ -90,7 +90,7 @@ const Contact = () => {
 
         <div className="mt-12 text-center">
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/jeremy-lamour/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center text-blue-600 hover:text-blue-700"

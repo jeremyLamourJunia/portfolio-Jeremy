@@ -30,7 +30,7 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({ images }) => {
         <img
           src={images[currentIndex]}
           alt={`Slide ${currentIndex + 1}`}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-top"
         />
       </motion.div>
 
