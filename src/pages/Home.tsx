@@ -103,7 +103,7 @@ const Home = () => {
           >
            <div className="absolute inset-0 bg-gradient-to-r from-blue-dark to-blue-light opacity-20 rounded-full blur-3xl"></div>
             <img
-              src="images/image_jérémy.jpg"
+              src="images/image_jérémy.JPG"
               alt="Jérémy Lam"
               className="relative z-10 w-96 h-96 object-cover rounded-full mx-auto border-4 border-white shadow-xl"
             />
