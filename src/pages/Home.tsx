@@ -77,9 +77,9 @@ const Home = () => {
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.3 }}
-              className="text-xl text-gray-600"
+              className="text-lg text-gray-600"
             >
-              Développeur Full Stack & Entrepreneur
+              Étudiant / Développeur Full Stack & Entrepreneur
             </motion.p>
             <motion.div
               initial={{ y: 20, opacity: 0 }}
