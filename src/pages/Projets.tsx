@@ -226,7 +226,7 @@ const Experience = () => {
       <div className="pt-24 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center mb-8">
-            <h1 className="text-4xl font-bold">Expériences</h1>
+            <h1 className="text-4xl font-bold">Mes projets</h1>
             <button
               onClick={() => setShowFilters(!showFilters)}
               className="flex items-center gap-2 px-4 py-2 text-blue-600 hover:text-blue-700"

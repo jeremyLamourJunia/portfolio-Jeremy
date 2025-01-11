@@ -4,7 +4,7 @@ import { AnimatePresence } from 'framer-motion';
 import Navbar from './components/Navbar';
 import ScrollToTop  from './components/ScrollToTop';
 import Home from './pages/Home';
-import Experience from './pages/Experience';
+import Projets from './pages/projets';
 import Business from './pages/Business';
 import Contact from './pages/Contact';
 
@@ -17,7 +17,7 @@ function App() {
         <AnimatePresence mode="wait">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/experience" element={<Experience />} />
+            <Route path="/projets" element={<Projets />} />
             <Route path="/business" element={<Business />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
