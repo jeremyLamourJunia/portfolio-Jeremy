@@ -4,7 +4,7 @@ import { AnimatePresence } from 'framer-motion';
 import Navbar from './components/Navbar';
 import ScrollToTop  from './components/ScrollToTop';
 import Home from './pages/Home';
-import Projets from './pages/projets';
+import Projets from './pages/Projets';
 import Business from './pages/Business';
 import Contact from './pages/Contact';
 
