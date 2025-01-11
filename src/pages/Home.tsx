@@ -8,13 +8,24 @@ import Footer from '../components/Footer';
 
 const projects = [
   {
+    title: "Site pour le flocage de textiles",
+    categories: ["Web", "Backend", "Frontend"],
+    description: "Réalisation d’un site pour mon activité entrepreneuriale de flocage de textiles.",
+    longDescription: "Une perte de temps pour mon activité de flocage était de comprendre les attentes des clients par messages ou appels, puis de réaliser des devis manuellement. Cette étape devait être répétée pour chaque nouveau client potentiel ! Pour résoudre ce problème, j’ai décidé de créer un site qui présente les principaux textiles que je propose à la vente, accompagné d’un système de dépôt de logos. Le client peut personnaliser sa commande en choisissant l’emplacement des logos et obtenir instantanément une estimation du prix. Une fois satisfait, il remplit ses informations, ce qui génère automatiquement un email envoyé à la fois au client et à moi-même avec les détails de sa commande. Ce système me fait gagner un temps précieux, que je peux consacrer à d’autres aspects de mon activité.",
+    date: "Novembre - Décembre 2024",
+    images: ["images/capture printcool 1.jpeg", "images/capture printcool 2.jpeg", "images/capture printcool 3.jpeg", "images/capture printcool 4.jpeg", "images/capture printcool 5.jpeg"],
+    technologies: ["React", "Vite", "Tailwind", "Node.js", "Nodemailer"],
+    duration: "2 mois à temps partiel",
+    link:"https://print-cool.vercel.app/"
+  },
+  {
     title: "Site Internet Junior Entreprise",
     categories: ["Web", "Full Stack"],
     description: "Refonte et gestion du site web de la Junior Entreprise.",
     longDescription: "En tant que DSI, j'ai conçu une nouvelle version du site web de la Junior Entreprise. Le site propose deux interfaces : une pour les étudiants (pour rejoindre l'association et réaliser des missions) et une pour les entreprises (présentation des services et missions réalisées). Cette refonte a permis d'améliorer la gestion et l'accès aux informations.",
     date: "Décembre 2023 - Décembre 2024",
     images: [
-      "public/images/capture_junior.jpeg",
+      "images/capture_junior.jpeg",
     ],
     technologies: ["WordPress"],
     duration: "12 mois à temps partiel",
@@ -28,16 +39,17 @@ const projects = [
     longDescription: "Pendant plus d'un mois, nous avions carte blanche pour réaliser un projet informatique. Après plusieurs réunions, nous avons décidé de créer une plateforme SaaS pour améliorer l'expérience client dans les restaurants tout en simplifiant la gestion pour les restaurateurs. Côté restaurateur, le système permet de gérer le menu, les stocks, et la trésorerie avec un tableau de bord complet. Côté consommateur, les clients peuvent scanner un QR code pour accéder au menu, passer commande, et suivre l'état de leur commande en temps réel. Des options comme le paiement via API (SumUp), une borne de commande et une interface web pour consulter le menu en ligne ont également été intégrées.",
     date: "Mai 2024",
     images: [
-     "public/images/capture_comptoire_1 (1).jpeg",
-     "public/images/capture_comptoire_1 (2).jpeg",
-     "public/images/capture_comptoire_1 (4).jpeg",
-     "public/images/capture_comptoire_1 (3).jpeg",
-     "public/images/capture_comptoire_1 (5).jpeg",
-     "public/images/capture_comptoire_1 (6).jpeg"
+     "images/capture_comptoire_1 (1).jpeg",
+     "images/capture_comptoire_1 (2).jpeg",
+     "images/capture_comptoire_1 (4).jpeg",
+     "images/capture_comptoire_1 (3).jpeg",
+     "images/capture_comptoire_1 (5).jpeg",
+     "images/capture_comptoire_1 (6).jpeg"
     ],
     technologies: ["React", "Next.js", "MongoDB", "Node.js", "Tailwind CSS"],
     duration: "1 mois et demi à temps plein"
   },
+
 ];
 
 const Home = () => {
@@ -91,7 +103,7 @@ const Home = () => {
           >
            <div className="absolute inset-0 bg-gradient-to-r from-blue-dark to-blue-light opacity-20 rounded-full blur-3xl"></div>
             <img
-              src="public/images/image_jérémy.jpg"
+              src="images/image_jérémy.jpg"
               alt="Jérémy Lam"
               className="relative z-10 w-96 h-96 object-cover rounded-full mx-auto border-4 border-white shadow-xl"
             />

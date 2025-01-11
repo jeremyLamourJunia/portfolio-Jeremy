@@ -7,25 +7,36 @@ import Footer from '../components/Footer';
 
 // Liste des projets
 const projects = [
-
+  {
+    title: "Site pour le flocage de textiles",
+    categories: ["Web", "Backend", "Frontend"],
+    description: "Réalisation d’un site pour mon activité entrepreneuriale de flocage de textiles.",
+    longDescription: "Une perte de temps pour mon activité de flocage était de comprendre les attentes des clients par messages ou appels, puis de réaliser des devis manuellement. Cette étape devait être répétée pour chaque nouveau client potentiel ! Pour résoudre ce problème, j’ai décidé de créer un site qui présente les principaux textiles que je propose à la vente, accompagné d’un système de dépôt de logos. Le client peut personnaliser sa commande en choisissant l’emplacement des logos et obtenir instantanément une estimation du prix. Une fois satisfait, il remplit ses informations, ce qui génère automatiquement un email envoyé à la fois au client et à moi-même avec les détails de sa commande. Ce système me fait gagner un temps précieux, que je peux consacrer à d’autres aspects de mon activité.",
+    date: "Novembre - Décembre 2024",
+    images: ["images/capture printcool 1.jpeg", "images/capture printcool 2.jpeg", "images/capture printcool 3.jpeg", "images/capture printcool 4.jpeg", "images/capture printcool 5.jpeg"],
+    technologies: ["React", "Vite", "Tailwind", "Node.js", "Nodemailer"],
+    duration: "2 mois à temps partiel",
+    link:"https://print-cool.vercel.app/"
+  },
+  
   {
     title: "Affichage Graphique avec Three.js",
     categories: ["Computer Graphics"],
     description: "Réalisation d'un logo en 3D avec des algorithmes d'infographie.",
     longDescription: "En groupe, nous avons développé un système pour tracer des courbes et afficher des objets vectoriels en 2D et 3D. Le projet a permis d'afficher un logo complexe avec des animations et une navigation autour de celui-ci.",
     date: "Octobre - Décembre 2024",
-    images: ["public/images/capture info.png"],
+    images: ["images/capture info.png"],
     technologies: ["HTML", "CSS", "JavaScript", "Three.js"],
     duration: "3 mois à temps partiel"
   },
   {
-    title: "Site Restaurant",
+    title: "Site Restaurant (freelance)",
     categories: ["Web Design", "WordPress"],
     description: "Création d'un site vitrine pour un restaurant.",
     longDescription: "Réalisation en freelance d'un site internet pour un restaurant type brasserie. Le site inclut les horaires, l'adresse, le menu, et d'autres informations importantes, permettant aux clients d'accéder facilement aux détails du restaurant en ligne. L'objectif était de renforcer la présence digitale du restaurant et d'optimiser les conversions.",
     date: "Octobre 2024",
     images: [
-      "public/images/capture_lemilord.jpeg",
+      "images/capture_lemilord.jpeg",
     ],
     technologies: ["WordPress"],
     duration: "1 mois à temps partiel",
@@ -38,7 +49,7 @@ const projects = [
     longDescription: "En tant que DSI, j'ai conçu une nouvelle version du site web de la Junior Entreprise. Le site propose deux interfaces : une pour les étudiants (pour rejoindre l'association et réaliser des missions) et une pour les entreprises (présentation des services et missions réalisées). Cette refonte a permis d'améliorer la gestion et l'accès aux informations.",
     date: "Décembre 2023 - Décembre 2024",
     images: [
-      "public/images/capture_junior.jpeg",
+      "images/capture_junior.jpeg",
     ],
     technologies: ["WordPress"],
     duration: "12 mois à temps partiel",
@@ -52,23 +63,23 @@ const projects = [
     longDescription: "Pendant plus d'un mois, nous avions carte blanche pour réaliser un projet informatique. Après plusieurs réunions, nous avons décidé de créer une plateforme SaaS pour améliorer l'expérience client dans les restaurants tout en simplifiant la gestion pour les restaurateurs. Côté restaurateur, le système permet de gérer le menu, les stocks, et la trésorerie avec un tableau de bord complet. Côté consommateur, les clients peuvent scanner un QR code pour accéder au menu, passer commande, et suivre l'état de leur commande en temps réel. Des options comme le paiement via API (SumUp), une borne de commande et une interface web pour consulter le menu en ligne ont également été intégrées.",
     date: "Mai 2024",
     images: [
-     "public/images/capture_comptoire_1 (1).jpeg",
-     "public/images/capture_comptoire_1 (2).jpeg",
-     "public/images/capture_comptoire_1 (4).jpeg",
-     "public/images/capture_comptoire_1 (3).jpeg",
-     "public/images/capture_comptoire_1 (5).jpeg",
-     "public/images/capture_comptoire_1 (6).jpeg"
+     "images/capture_comptoire_1 (1).jpeg",
+     "images/capture_comptoire_1 (2).jpeg",
+     "images/capture_comptoire_1 (4).jpeg",
+     "images/capture_comptoire_1 (3).jpeg",
+     "images/capture_comptoire_1 (5).jpeg",
+     "images/capture_comptoire_1 (6).jpeg"
     ],
     technologies: ["React", "Next.js", "MongoDB", "Node.js", "Tailwind CSS"],
     duration: "1 mois et demi à temps plein"
   },
   {
-    title: "Site de Réservation de Vélo",
+    title: "Site de Réservation de Vélo (freelance)",
     categories: ["Web", "Reservation System"],
     description: "Site de réservation de vélos pour un foyer.",
     longDescription: "Création d'un site en WordPress pour gérer la réservation de flottes de vélos. J'ai développé un plugin de réservation personnalisé, intégrant la gestion des flottes et l'envoi automatique d'emails pour les nouvelles réservations ou modifications.",
     date: "Août 2024",
-    images: ["public/images/capture_vélo.jpeg",'public/images/capture vélo_2.jpeg'],
+    images: ["images/capture_vélo.jpeg",'images/capture vélo_2.jpeg'],
     technologies: ["WordPress", "PHP", "SQL", "JavaScript"],
     duration: "6 mois à temps partiel"
   },
@@ -79,7 +90,7 @@ const projects = [
     description: "Interface pour faciliter la mise en place d'une partie de Wargame.",
     longDescription: "Développement en Java d'une application permettant de générer automatiquement une armée selon les informations fournies par l'utilisateur. Le projet intègre la gestion des erreurs et un système de tests complet.",
     date: "Décembre 2024",
-    images: ["public/images/Capture_projet_java.PNG"],
+    images: ["images/Capture_projet_java.PNG"],
     technologies: ["Java"],
     duration: "1 mois à temps partiel"
   },
@@ -90,7 +101,7 @@ const projects = [
     longDescription: "Avec un collègue, nous avons développé une modélisation simplifiée de rames de métro, incluant des facteurs d'arrêt d'urgence, d'accélération et de freinage. Le projet a permis de renforcer nos compétences en programmation orientée objet et en gestion de threads, avec une interface graphique basée sur SFML.",
     date: "Décembre 2023",
     images: [
-      "public/images/Capture_val.PNG",
+      "images/Capture_val.PNG",
     ],
     technologies: ["C++", "SFML"],
     duration: "1 mois à temps partiel"
@@ -101,7 +112,7 @@ const projects = [
     description: "Création d'une plateforme web pour la gestion des notes.",
     longDescription: "Développement d'une plateforme permettant aux étudiants d'importer leurs relevés de notes pour calculer automatiquement leurs moyennes et classements. Le projet utilise des techniques de scraping pour extraire les données depuis un PDF et les traiter.",
     date: "Décembre 2023",
-    images: ["public/images/capture note 1.jpeg", "public/images/capture note 2.jpeg", "public/images/capture note 3.jpeg"],
+    images: ["images/capture note 1.jpeg", "images/capture note 2.jpeg", "images/capture note 3.jpeg"],
     technologies: ["HTML", "CSS", "PHP", "JavaScript", "SQL"],
     duration: "1 mois à temps partiel"
   },
@@ -111,7 +122,7 @@ const projects = [
     description: "Développement d'un jeu web avec un solveur intégré.",
     longDescription: "Lors de notre première année, nous avons conçu un jeu web de logique avec un solveur capable de trouver les solutions optimales pour résoudre différentes cartes. Ce projet nous a permis de collaborer efficacement, de partir d'une idée jusqu'à un produit fini, et de le présenter devant un amphithéâtre.",
     date: "Mai 2023",
-    images: ["public/images/Capture_CIR1.PNG", "public/images/capture cir1 2.jpeg", "public/images/capture cir1 3.jpeg"],
+    images: ["images/Capture_CIR1.PNG", "images/capture cir1 2.jpeg", "images/capture cir1 3.jpeg"],
     technologies: ["HTML", "CSS", "JavaScript", "PHP"],
     duration: "1 mois et demi à temps plein"
   },
@@ -121,7 +132,7 @@ const projects = [
     description: "Site vitrine avec formulaire de contact pour un club de baseball.",
     longDescription: "Création d'un site internet permettant de présenter les informations clés sur le club de baseball, incluant horaires et coordonnées. Ce projet a été réalisé dans le cadre d'un cours de web.",
     date: "Décembre 2022",
-    images: ["public/images/capture vipères valenciennes.jpeg"],
+    images: ["images/capture vipères valenciennes.jpeg"],
     technologies: ["HTML", "CSS"],
     duration: "2 mois à temps partiel",
     link: "https://www.viperesvalenciennes.com/"

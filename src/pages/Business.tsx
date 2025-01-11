@@ -43,12 +43,12 @@ const Business = () => {
 
             <div className="mt-8 grid grid-cols-1 justify-items-center md:grid-cols-2 gap-6">
               <img 
-                src="public/images/image4.jpg" 
+                src="images/image4.jpg" 
                 alt="Exemple de flocage" 
                 className="w-2/3  rounded-lg shadow-md"
               />
               <img 
-                src="public/images/image5.jpg" 
+                src="images/image5.jpg" 
                 alt="Atelier de flocage" 
                 className="w-2/3 rounded-lg shadow-md"
               />
