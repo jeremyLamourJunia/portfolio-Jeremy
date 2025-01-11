@@ -58,11 +58,11 @@ const Navbar = () => {
               Accueil
             </NavLink>
             <NavLink
-              to="/experience"
+              to="/projets"
               className="block px-3 py-2 rounded-md text-base font-medium hover:text-blue-600"
               onClick={() => setIsOpen(false)}
             >
-              Expériences
+              Projets
             </NavLink>
             <NavLink
               to="/business"
